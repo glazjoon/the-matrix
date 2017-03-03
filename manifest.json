@@ -1,0 +1,14 @@
+{
+  "name": "The Matrix",
+  "version": "0.9",
+	"author": "Neo",
+  "manifest_version": 2,
+	"default_locale": "en",
+	"permissions": [
+	],
+  "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"]
+  }],
+  "web_accessible_resources": ["src/inject.js"]
+}
